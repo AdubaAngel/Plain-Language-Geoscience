@@ -15,7 +15,7 @@ This tool directly addresses these challenges by making geoscience content **acc
 
 ## Live Demo
 
-[Add your GitHub Pages link here after deploying]
+GitHub Pages Link will be here
 
 ## Features
 
