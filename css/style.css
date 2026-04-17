@@ -1,0 +1,141 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #1a2a3a;
+    background-color: #f5f7fa;
+    padding: 2rem 1rem;
+}
+
+/* Container for better readability */
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Banner / Header */
+#banner {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #2c5f2d;
+}
+
+#banner h1 {
+    font-size: 1.8rem;
+    color: #2c5f2d;
+    font-weight: 600;
+}
+
+/* Section cards */
+section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.2s ease;
+}
+
+section:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Section headings */
+section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    color: #2d3748;
+}
+
+/* Original jargon styling */
+.original-jargon #jargon-content {
+    background-color: #fef5e7;
+    padding: 1rem;
+    border-left: 4px solid #e67e22;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #3b3b3b;
+}
+
+/* Plain language styling */
+.plain-language-version #plain-content {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-left: 4px solid #2e7d32;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #1b5e20;
+}
+
+/* Q&A container */
+#qna-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Individual Q&A card */
+.qa-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+}
+
+.qa-question {
+    font-weight: 700;
+    color: #2c5282;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.qa-question::before {
+    content: "❓";
+    font-size: 1rem;
+}
+
+.qa-answer {
+    color: #2d3748;
+    padding-left: 1.5rem;
+    border-left: 3px solid #cbd5e0;
+    margin-top: 0.5rem;
+}
+
+/* Source citation */
+.source-note {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #718096;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.2rem;
+    }
+}

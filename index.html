@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain-Language Geoscience Explainer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="banner">
+        <h1>Nova Scotia Mineral Exploration</h1>
+    </header> 
+    
+    <main id="main-content">
+        <section class="translator-section">
+            <h2>Translate Any Geoscience Text</h2>
+            <textarea id="input-text" rows="5" placeholder="Paste a technical paragraph about mineral exploration, geology, or mining..."></textarea>
+            <button id="translate-btn">Translate to Plain Language</button>
+        </section>
+        <section id="original" class="original-jargon">
+            <article id="jargon-section">
+                <h2>Original Jargon</h2>
+                <p id="jargon-content"></p>
+            </article>
+        </section>
+        
+        <section id="plain" class="plain-language-version">
+            <article id="plain-section">
+                <h2>Plain Language Translation</h2>
+                <p id="plain-content"></p>
+            </article>
+        </section>
+        
+        <section id="Q&A" class="Q&A-section">
+            <article id="question-and-ans">
+                <h2>Questions & Answers</h2>
+                <div id="qna-container"></div>
+            </article>
+        </section>
+
+        <section id="translation-result" class="translation-output" style="display: none;">
+            <h2>Plain Language Translation</h2>
+            <p id="dynamic-plain-output"></p>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
